@@ -11,7 +11,7 @@ class Interval{
 
 vector<Interval> getIntersection(vector<Interval> v1, vector<Interval> v2) {
     vector<Interval> ans;
-    //if (v1.empty() || v2.empty()) return ans;
+    if (v1.empty() || v2.empty()) return ans;
 
     int i = 0, j = 0;
     int m = v1.size(), n = v2.size();
