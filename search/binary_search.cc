@@ -27,7 +27,7 @@
 using namespace std;
 
 // origin search
-int bifind(vector<int> &arr, int target) {
+int find(vector<int> &arr, int target) {
     int left = 0, right = arr.size()-1;
 
     while (left <= right) {
@@ -124,7 +124,7 @@ int find_pivot_duplicates(vector<int> &arr) {
 int main()
 {
     vector<int> arr = {1, 3, 3, 3, 3, 4, 5, 6, 9};
-    cout << bifind(arr, 5) << endl;
+    cout << find(arr, 5) << endl;
     cout << find_range(arr, 3, true) << endl;
     cout << find_range(arr, 3, false) << endl;
 
